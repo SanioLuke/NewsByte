@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color_dark">#FF7474</color>
+    <color name="main_color">#FF8686</color>
+    <color name="light_grey">#F4F4F4</color>
+    <color name="medium_grey">#E8E8E8</color>
+    <color name="darkish_medium_grey">#D6D6D6</color>
+    <color name="dark_grey">#AAAAAA</color>
+    <color name="semi_black_1">#424242</color>
+
+
+    <color name="my_color">#FF8686</color>
+    <color name="green_color">#94C77D</color>
+</resources>

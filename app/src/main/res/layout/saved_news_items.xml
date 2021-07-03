@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/saved_news_mainlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/saved_news_imagecard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/saved_news_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/saved_news_textlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toEndOf="@+id/saved_news_imagecard"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/saved_news_source_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#Hindustan Times"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/saved_news_headline_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxLines="2"
+            android:text="Heaitle Headl dline Title Headline Title  omnis iste natus error sit  natu"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/saved_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29-03-21"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/saved_news_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seeking Alpha"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.NewsDisplayActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/news_display_readmore_btn"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/news_display_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pref_back2" />
+
+                <ImageButton
+                    android:id="@+id/news_display_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/top_curved_border"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/news_display_save_btn"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/news_display_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="Headline Title"
+                            android:textColor="@color/main_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/news_display_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="29-03-21"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/news_display_save_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/curve_border"
+                        android:backgroundTint="@color/darkish_medium_grey"
+                        android:elevation="2dp"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_bookmark"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/news_display_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Washington - Sed ut perspiciatis un natus error sit voluptatem accusan ium doloremque laudan. sed quia consequuntur magni dolores eos ratione voluptatem sequi nesciunt. Neque porro quisqua uia non mest, qui dolorem ipsum quia dolo rsit amet, consectetur, adipisci velit sed quia non numquam eius modi empora incidunt ut labore et dolo magnam aliquam quaerat volupta. Ut enim ad minima veniam, quis ostrum exercitationem ullam corri suscipit laboriosam, nisi ut aliqu."
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/news_display_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Washington - Sed ut perspiciatis un natus error sit voluptatem accusan ium doloremque laudan. sed quia consequuntur magni dolores eos ratione voluptatem sequi nesciunt. Neque porro quisqua uia non mest, qui dolorem ipsum quia dolo rsit amet, consectetur, adipisci velit sed quia non numquam eius modi empora incidunt ut labore et dolo magnam aliquam quaerat volupta. Ut enim ad minima veniam, quis ostrum exercitationem ullam corri suscipit laboriosam, nisi ut aliqu."
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/news_display_readmore_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/curve_border"
+        android:backgroundTint="@color/main_color"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Read More About The Article"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

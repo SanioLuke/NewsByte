@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.AllNewsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/allnewsfrag_image"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pref_back2" />
+
+        <LinearLayout
+            android:id="@+id/allnewsfrag_datalay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allnewsfrag_image"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/allnewsfrag_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/allnewsfrag_save_btn"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="News Header"
+                    android:textSize="17sp" />
+
+                <ImageButton
+                    android:id="@+id/allnewsfrag_save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/curve_border"
+                    android:backgroundTint="@color/darkish_medium_grey"
+                    android:elevation="2dp"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_bookmark"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/allnewsfrag_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Sed ut perspiciatis unde omnis iste natus error sit  natus error sit voluptatem accusan ium doloremqu Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan ium doloremque laudan..."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/allnewsfrag_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Sed ut perspiciatis unde omnis iste natus error sit  natus error sit voluptatem accusan ium doloremqu Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan ium doloremque laudan..."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/allnewsfrag_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Written by - Seeking Alpha"
+                android:textColor="@color/main_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allnews_linklay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/semi_black_1"
+            android:elevation="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/allnewsfrag_timesource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="#Hindustan Times | Published at : 25/06/2021"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Tap to read more"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
