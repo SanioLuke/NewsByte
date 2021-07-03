@@ -1,0 +1,2 @@
+# NewsByte
+NewsByte is a Hot News App which provides the users with new latest news using APIs. The app is still in its development process, but till now the app is provided with the features which will get the latest news to the users, along with new hot news. The app is also provided with a feature to search the users desired news from the app. The app is an inspiration from famous news application "Inshorts".
